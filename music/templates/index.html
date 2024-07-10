@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NaviBar</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navibar">
+      <nav>
+        <h2 class="logo">Site <span>Name</span></h2>
+        <div class="side-nav">
+          <ul class="naviUlList">
+            <li class="home-link"><a href="#home" class="nav-links active">Home</a></li>
+            <li class="play-link"><a href="#playlist" class="nav-links">Playlists</a></li>
+            <!-- <li><a href="">Services</a></li> -->
+            <li class="about-link"><a href="#about" class="nav-links">About</a></li>
+            <li class="search-link">
+              <input
+                type="text"
+                id="naviSearchField"
+                placeholder="Search Songs"
+              />
+              <button id="naviSearchButton" class="bx bx-search"></button>
+            </li>
+          </ul>
+        </div>
+        
+
+        <span>
+          <button type="button" class="naviBarBtnSignUp topSignUp">SignUp</button>
+          <button type="button" class="naviBarBtnSignIn topSignIn">LogIn</button>
+          <script>
+            document.querySelector(".topSignUp").addEventListener("click", function() {
+                window.location.href = "/signup/";
+            });
+            document.querySelector(".topSignIn").addEventListener("click", function() {
+                window.location.href = "/login/";
+            });
+        </script>
+        </span>
+        
+        <div class="hamberger">
+          <div class="lines"></div>
+          <div class="lines"></div>
+          <div class="lines"></div>
+        </div>
+      </nav>
+
+
+
+      <div class="introArea active">
+        <div id="introContentHead">
+          <h1 class="introHeading">Welcome to our website!</h1>
+        </div>
+        <div class="introContentBody">
+          <p class="introDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit
+            voluptate earum magnam accusantium illum doloremque officia fuga!
+            Beatae exercitationem nemo, aliquam dolore numquam sit expedita.
+            Accusantium quas id fuga!
+          </p>
+          <p class="introDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit
+            voluptate earum magnam accusantium illum doloremque officia fuga!
+            Beatae exercitationem nemo, aliquam dolore numquam sit expedita.
+            Accusantium quas id fuga!
+          </p>
+          <p class="introDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit
+            voluptate earum magnam accusantium illum doloremque officia fuga!
+            Beatae exercitationem nemo, aliquam dolore numquam sit expedita.
+            Accusantium quas id fuga!
+          </p>
+          <button class="introExplorbtn">Explor Music</button>
+          <button class="introExplorbtn">Learn More</button>
+        </div>
+      </div>
+
+      <div class="AboutArea">
+        <div id="introContentHead">
+          <h1 class="introHeading">About Our Website!</h1>
+        </div>
+        <div class="introContentBody">
+          <p class="introDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit
+            voluptate earum magnam accusantium illum doloremque officia fuga!
+            Beatae exercitationem nemo, aliquam dolore numquam sit expedita.
+            Accusantium quas id fuga!
+          </p>
+          <p class="introDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit
+            voluptate earum magnam accusantium illum doloremque officia fuga!
+            Beatae exercitationem nemo, aliquam dolore numquam sit expedita.
+            Accusantium quas id fuga!
+          </p>
+          <p class="introDescription">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est sit
+            voluptate earum magnam accusantium illum doloremque officia fuga!
+            Beatae exercitationem nemo, aliquam dolore numquam sit expedita.
+            Accusantium quas id fuga!
+          </p>
+          <button class="introExplorbtn">Explor Music</button>
+          <button class="introExplorbtn">Learn More</button>
+        </div>
+      </div>
+      <div class="playlist_area active"> 
+        <div class="left-navigation">
+          <div class="popular-song">
+            <h1 class="popular-song-heading">Here's a sample of what's moving fans this week.</h1>
+            <div class="ini-div-pop">
+              <img class="pop-image" src="https://i.scdn.co/image/ab6761610000e5eb4a21b4760d2ecb7b0dcdc8da" alt="">
+              <h3 class="pop-disc">Billie Eilish has the most spots on Top Songs Global. “BIRDS OF A FEATHER” is the highest at #3.</h3>
+            </div>
+          </div>
+          <div class="popular-song">
+            <h1 class="popular-song-heading">Here's a sample of what's moving fans this week.</h1>
+            <div class="ini-div-pop">
+              <img class="pop-image" src="https://i.scdn.co/image/ab6761610000e5ebe053b8338322b9c8609ee7ae" alt="">
+              <h3 class="pop-disc">“Please Please Please” by Sabrina Carpenter is the highest new entry on Top Songs Global at #2.</h3>
+            </div>
+          </div>
+          <div class="popular-song">
+            <h1 class="popular-song-heading">Here's a sample of what's moving fans this week.</h1>
+            <div class="ini-div-pop">
+              <img class="pop-image" src="https://i.scdn.co/image/ab67616d0000b27368a450f7bcdc187e20f0ba0a" alt="">
+              <h3 class="pop-disc">“REAL GANGSTA LOVE” by Trueno is the biggest gainer on Top Songs Global, up 173 spots at #25.</h3>
+            </div>
+          </div>
+          <div class="circle">
+            <div class="nav-circle active-circle"></div>
+            <div class="nav-circle"></div>
+            <div class="nav-circle"></div>
+          </div>
+          <div class="lgn-container">
+            <button type="button" class="naviBarBtnSignUp midSignUp">SignUp</button>
+            <button type="button" class="naviBarBtnSignIn midSignIn">LogIn</button>
+            <script>
+              document.querySelector(".midSignUp").addEventListener("click", function() {
+                  window.location.href = "/signup/";
+              });
+              document.querySelector(".midSignIn").addEventListener("click", function() {
+                  window.location.href = "/login/";
+              });
+          </script>
+          </div>
+        </div>
+        
+        <div class="play-container">
+          <div class="artist-section">
+            <div class="artist-section-heading">Popular artists</div>
+            <div class="artists-wrapper">
+              <div class="artist-card">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5ebe053b8338322b9c8609ee7ae"
+                  alt=""
+                />
+                <div class="artist-name">Sabrina Carpenter</div>
+                <div class="type">Artist</div>
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5eb4a21b4760d2ecb7b0dcdc8da"
+                  alt=""
+                />
+                <div class="artist-name">Billie Eilish</div>
+                <div class="type">Artist</div>
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5eba00b11c129b27a88fc72f36b"
+                  alt=""
+                />
+                <div class="artist-name">Eminem</div>
+                <div class="type">Artist</div>
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5ebbb330168f192dbdc28fcbd37"
+                  alt=""
+                />
+                <div class="artist-name">Tommy Richman</div>
+                <div class="type">Artist</div>
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://i.scdn.co/image/ab6761610000e5eb8ec5f4d4241631f8593f52c1"
+                  alt=""
+                />
+                <div class="artist-name">FloyyMenor</div>
+                <div class="type">Artist</div>
+              </div>
+              
+            </div>
+            <div class="see-more">See More</div>
+          </div>
+          <div class="album-section">
+            <div class="album-section-heading">Popular Albums</div>
+            <div class="album-wrapper">
+              <div class="album-card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d00001e02ff9ca10b55ce82ae553c8228"
+                  alt=""
+                />
+                <div class="album-name">Sabrina Carpenter</div>
+                <div class="type">Artist</div>
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273181358a2bff285f185913a10"
+                  alt=""
+                />
+                <div class="artist-name">Billie Eilish</div>
+                <div class="type">Artist</div>
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273a1aadaf8716b8d8a58444b6c"
+                  alt=""
+                />
+                <div class="artist-name">Eminem</div>
+                <div class="type">Artist</div>
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b273741fd4807f442af3f7359316"
+                  alt=""
+                />
+                <div class="artist-name">Tommy Richman</div>
+                <div class="type">Artist</div>
+              </div>
+              <div class="artist-card">
+                <img
+                  src="https://i.scdn.co/image/ab67616d0000b27399583bb32b47e87d55c6064b"
+                  alt=""
+                />
+                <div class="artist-name">FloyyMenor</div>
+                <div class="type">Artist</div>
+              </div>
+            </div>
+            <div class="see-more">See More</div>
+          </div>
+      
+        </div>
+        
+        
+    </div>
+
+    <div class="whiteArea">
+      <div class="video">
+          <img class="video-img" src="{% static 'images/charts_square_400x400.gif' %}" alt="">
+      </div>
+      <div class="text">
+          <h1>Discover, stream, and share your favorite tunes anytime, anywhere.</h1>
+          <span>
+            <button type="button" class="naviBarBtnSignUp botSignUp">SignUp</button>
+            <button type="button" class="naviBarBtnSignIn botSignIn">LogIn</button>
+            <script>
+              document.querySelector(".botSignUp").addEventListener("click", function() {
+                  window.location.href = "/signup/";
+              });
+              document.querySelector(".botSignIn").addEventListener("click", function() {
+                  window.location.href = "/login/";
+              });
+          </script>
+          </span>
+      </div>
+    </div>
+
+    <div class="purpleArea">
+      <p>about Us : projectOne Team</p>
+    </div>
+    <script src="{% static 'js/script.js' %}"></script>
+  </body>
+</html>
