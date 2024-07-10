@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}" />
+    <title>Login</title>
+  </head>
+  <body>
+    <div id="backgroundBlur">
+      <div id="loginArea">
+        <!-- <div class="heading">Login</div>
+      <form action="{% url 'login' %}" method="post">
+        {% csrf_token %}
+        <div class="email">
+          <label for="username">Username:</label><br />
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="example@email.com"
+            required
+          />
+        </div>
+        <div class="password">
+          <label for="password">Password:</label><br />
+          <input name="password" id="password" type="password" required />
+        </div>
+        <div class="login-btn">
+          <input type="submit" value="Login" />
+        </div>
+      </form> -->
+        <div id="design"></div>
+        <div id="loginHead">
+          <h1 class="" loginHedding>User Login</h1>
+        </div>
+        <form class="LoginForm" action="{% url 'login' %}" method="post">
+          {% csrf_token %}
+          <label for="username" class="details">E-mail</label><br />
+          <input
+            class="UserInput"
+            name="password"
+            type="email"
+            placeholder="example@gmail.com"
+            required
+          /><br /><br />
+          <label class="details" for="password">Password</label><br />
+          <input
+            class="UserInput"
+            name="password"
+            type="password"
+            placeholder="Enter Password"
+            required
+          /><br /><br />
+          <input type="submit" class="SubmitButton" value="Login" /><br />
+          <p class="signupmsg">
+            Still haven't you a account? <a href="#" class="signup">Signup</a>
+          </p>
+          <script>
+            document
+              .querySelector(".signup")
+              .addEventListener("click", function () {
+                window.location.href = "/signup/";
+              });
+          </script>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+body {
+  height: 100vh;
+  background-color: black;
+}
+
+.registration {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 720px;
+  background-color: rgb(255, 255, 255);
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 40px auto;
+}
+
+.main-image:nth-child(2) {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.main-image img {
+  width: 100%;
+}
+
+.heading {
+  color: black;
+  font-weight: 500;
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.fname,
+.lname,
+.email,
+.password,
+.cpassword,
+.birth-day {
+  padding: 15px 10px 0 20px;
+}
+
+.fname input,
+.lname input,
+.email input,
+.password input,
+.cpassword input,
+.birth-day input {
+  width: 80%;
+  height: 30px;
+}
+label {
+  font-size: 14px;
+}
+
+.agreement {
+  padding: 13px 0 0px 20px;
+}
+
+.regi-btn input {
+  margin: 7px 0px 5px 20px;
+  background-color: rgb(0, 126, 126);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  padding: 10px 20px;
+}
